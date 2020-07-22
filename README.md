@@ -226,7 +226,6 @@ it deserves explicit mention.
   - [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   - [CodeTour](https://marketplace.visualstudio.com/items?itemName=vsls-contrib.codetour)
 - [GraphQL](https://graphql.org/)
-- [Pathom](https://github.com/wilkerlucio/pathom)
 - [Pact](https://pact.io/)
 - [Elixir](https://elixir-lang.org/)
   - [Erlang Worldview](https://en.wikipedia.org/wiki/Erlang_(programming_language)#Processes)

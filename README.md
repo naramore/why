@@ -215,7 +215,7 @@ it deserves explicit mention.
 - [GitHub](https://github.com/)
   - [Gitpod](https://www.gitpod.io/)
   - [Codespaces](https://github.com/features/codespaces)
-  - [Actions](https://github.com/features/actions
+  - [Actions](https://github.com/features/actions)
   - [Codacy](https://www.codacy.com/)
   - [Codecov](https://codecov.io/)
   - [Dependabot](https://dependabot.com/)

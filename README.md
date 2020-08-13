@@ -106,7 +106,7 @@
 
 - [The Hitchhiker's Guide to the Unexpected](https://ferd.ca/the-hitchhiker-s-guide-to-the-unexpected.html)
 - [Designing Data-Intensive Applications: Chapter 1. Reliable, Scalable, and Maintainable Applications](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/ch01.html)
-
+- [Define Roles By What Each Person Increasingly Knows](https://jessitron.com/2020/07/29/define-roles-by-what-does-each-person-increasingly-knows/)
 - [The Philosophy of Infrastructure & SRE](https://engineering.dollarshaveclub.com/the-philosophy-of-infrastructure-sre-9875e71019b4)
 - [Gall's Law](https://en.wikipedia.org/wiki/John_Gall_(author)#Gall's_law)
 

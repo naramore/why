@@ -210,6 +210,9 @@ it deserves explicit mention.
 - [Lambda the Ultimate](http://lambda-the-ultimate.org/)
 - [Ramblings from Jessie](https://blog.jessfraz.com/)
 
+Misc:
+- [Git Internals - Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
+
 ## Tools
 
 - [Cloud Native Computing Foundation](https://www.cncf.io/)

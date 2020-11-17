@@ -212,6 +212,7 @@ it deserves explicit mention.
 
 Misc:
 - [Git Internals - Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
+- [Introduction to Datalog](https://x775.net/2019/03/18/Introduction-to-Datalog.html)
 
 ## Tools
 

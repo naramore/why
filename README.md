@@ -36,6 +36,7 @@
 
 - [Is Quality Worth the Cost?](https://martinfowler.com/articles/is-quality-worth-cost.html)
 - [Operable Software](https://ferd.ca/operable-software.html)
+- [Zero-Bug Software Development](https://medium.com/qualityfaster/the-zero-bug-policy-b0bd987be684)
 - [The Beautiful Mess](https://cutlefish.substack.com/)
 - [North Star Playbook](https://amplitude.com/north-star/)
 - [Spine Model](https://spinemodel.info/)
@@ -45,7 +46,6 @@
   - [Transform Your Culture](https://simonsinek.com/transform-your-culture/?ref=mainNav)
   - [The Infinite Game](https://simonsinek.com/the-infinite-game)
 - [Rich Hickey - Hammock Driven Development](https://melreams.com/2017/05/rich-hickey-hammock-driven-development/)
-- [Zero-Bug Software Development](https://medium.com/qualityfaster/the-zero-bug-policy-b0bd987be684)
 
   Hammock Driven Development is a strategy for solving hard problems.
 

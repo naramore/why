@@ -45,6 +45,7 @@
   - [Transform Your Culture](https://simonsinek.com/transform-your-culture/?ref=mainNav)
   - [The Infinite Game](https://simonsinek.com/the-infinite-game)
 - [Rich Hickey - Hammock Driven Development](https://melreams.com/2017/05/rich-hickey-hammock-driven-development/)
+- [Zero-Bug Software Development](https://medium.com/qualityfaster/the-zero-bug-policy-b0bd987be684)
 
   Hammock Driven Development is a strategy for solving hard problems.
 

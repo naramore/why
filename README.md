@@ -118,6 +118,8 @@
   >
   > John Gall (1975) Systemantics: How Systems Really Work and How They Fail p. 71
 
+- [Things You Should Never Do, Part 1](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+
 ## Design, Development & Testing
 
 - [The Twelve-Factor App](https://12factor.net/) are a series of highly applicable,

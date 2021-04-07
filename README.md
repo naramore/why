@@ -119,6 +119,7 @@
   > John Gall (1975) Systemantics: How Systems Really Work and How They Fail p. 71
 
 - [Things You Should Never Do, Part 1](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+- [How Software Companies Die](https://gist.github.com/drawcode/e86fb28d0d58b12f73e9fc8cfd1ffbca)
 
 ## Design, Development & Testing
 

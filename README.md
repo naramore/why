@@ -220,7 +220,8 @@ it deserves explicit mention.
   - [The Anatomy of a Core Module](https://medium.com/very-big-things/towards-maintainable-elixir-the-anatomy-of-a-core-module-b7372009ca6d)
   - [Testing](https://medium.com/very-big-things/towards-maintainable-elixir-testing-b32ac0604b99)
 
-Git, Datalog and TerminusDB:
+## Git, Datalog and TerminusDB
+
 - [Git Internals - Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
 - [Git Compression of Blobs and Packfiles](https://gist.github.com/matthewmccullough/2695758)
 - [Introduction to Datalog](https://x775.net/2019/03/18/Introduction-to-Datalog.html)

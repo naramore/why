@@ -213,10 +213,24 @@ it deserves explicit mention.
 - ["My Bad Opinions"](https://ferd.ca/)
 - [Lambda the Ultimate](http://lambda-the-ultimate.org/)
 - [Ramblings from Jessie](https://blog.jessfraz.com/)
+- [Very Big Things - Towards Maintainable Elixir](https://medium.com/very-big-things)
+  - [The Development Process](https://medium.com/very-big-things/towards-maintainable-elixir-the-development-process-205ee257c109)
+  - [The Core and the Interface](https://medium.com/very-big-things/towards-maintainable-elixir-the-core-and-the-interface-c267f0da43)
+  - [Boundaries](https://medium.com/very-big-things/towards-maintainable-elixir-boundaries-ba013c731c0a)
+  - [The Anatomy of a Core Module](https://medium.com/very-big-things/towards-maintainable-elixir-the-anatomy-of-a-core-module-b7372009ca6d)
+  - [Testing](https://medium.com/very-big-things/towards-maintainable-elixir-testing-b32ac0604b99)
 
-Misc:
+Git, Datalog and TerminusDB:
 - [Git Internals - Git Objects](https://git-scm.com/book/en/v2/Git-Internals-Git-Objects)
+- [Git Compression of Blobs and Packfiles](https://gist.github.com/matthewmccullough/2695758)
 - [Introduction to Datalog](https://x775.net/2019/03/18/Introduction-to-Datalog.html)
+  - [Datalog Materialization](https://www.cs.ox.ac.uk/people/boris.motik/pubs/mnph19maintenance-revisited.pdf)
+  - [Datalog Inference Algorithms](https://www.ics.uci.edu/~welling/teaching/271fall09/FOLinference271-f09.pdf)
+- [TerminusDB Delta Encoding](https://terminusdb.com/t/papers/terminusdb-git.pdf)
+  - [HDT Specs](https://www.rdfhdt.org/technical-specification/)
+  - [Rank and Select Queries](https://users.dcc.uchile.cl/~gnavarro/algoritmos/ps/wea05.pdf)
+  - [High-Order Entropy-Compressed Text Indexes](http://pages.di.unipi.it/grossi/PAPERS/sodaconf03FINAL-LATEST.pdf)
+  - [Exchange and Consumption of Huge RDF Data](https://dataweb.infor.uva.es/wp-content/uploads/2012/02/eswc2012.pdf)
 
 ## Tools
 

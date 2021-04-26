@@ -219,6 +219,8 @@ it deserves explicit mention.
   - [Boundaries](https://medium.com/very-big-things/towards-maintainable-elixir-boundaries-ba013c731c0a)
   - [The Anatomy of a Core Module](https://medium.com/very-big-things/towards-maintainable-elixir-the-anatomy-of-a-core-module-b7372009ca6d)
   - [Testing](https://medium.com/very-big-things/towards-maintainable-elixir-testing-b32ac0604b99)
+- [Earthly Blog](https://earthly.dev/blog/)
+  - [Green vs Brown Programming Languages](https://earthly.dev/blog/brown-green-language/)
 
 ## Git, Datalog and TerminusDB
 

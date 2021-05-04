@@ -239,6 +239,7 @@ it deserves explicit mention.
   - [Rank and Select Queries](https://users.dcc.uchile.cl/~gnavarro/algoritmos/ps/wea05.pdf)
   - [High-Order Entropy-Compressed Text Indexes](http://pages.di.unipi.it/grossi/PAPERS/sodaconf03FINAL-LATEST.pdf)
   - [Exchange and Consumption of Huge RDF Data](https://dataweb.infor.uva.es/wp-content/uploads/2012/02/eswc2012.pdf)
+- [Finagle Delegation Tables (dtabs)](https://twitter.github.io/finagle/guide/Names.html#interpreting-paths-with-delegation-tables)
 
 ## Tools
 

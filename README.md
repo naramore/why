@@ -307,3 +307,6 @@ it deserves explicit mention.
 - [Operator Framework](https://operatorframework.io/)
 - [KubeLinter](https://github.com/stackrox/kube-linter)
 - [Falco](https://github.com/falcosecurity/falco)
+- [Grafeas](https://grafeas.io/)
+- [Dagda](https://github.com/eliasgranderubio/dagda)
+- [DependencyCheck](https://github.com/jeremylong/DependencyCheck)

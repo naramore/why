@@ -240,6 +240,9 @@ it deserves explicit mention.
   - [High-Order Entropy-Compressed Text Indexes](http://pages.di.unipi.it/grossi/PAPERS/sodaconf03FINAL-LATEST.pdf)
   - [Exchange and Consumption of Huge RDF Data](https://dataweb.infor.uva.es/wp-content/uploads/2012/02/eswc2012.pdf)
 - [Finagle Delegation Tables (dtabs)](https://twitter.github.io/finagle/guide/Names.html#interpreting-paths-with-delegation-tables)
+- https://github.com/axelson/dep_viz
+- https://github.com/josevalim/phx_esbuild_demo/pull/3/files
+- https://elixirforum.com/t/should-we-adopt-daves-way-of-building-applications-as-a-series-of-components-daves-talk-has-now-been-added/14428/64
 
 ## Tools
 

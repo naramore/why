@@ -125,6 +125,7 @@
   > **It’s harder to read code than to write it.**
 
 - [How Software Companies Die](https://gist.github.com/drawcode/e86fb28d0d58b12f73e9fc8cfd1ffbca)
+- [Code to Debug](https://programmingisterrible.com/post/173883533613/code-to-debug)
 
 ## Design, Development & Testing
 

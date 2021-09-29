@@ -245,6 +245,24 @@ it deserves explicit mention.
 - https://github.com/josevalim/phx_esbuild_demo/pull/3/files
 - https://elixirforum.com/t/should-we-adopt-daves-way-of-building-applications-as-a-series-of-components-daves-talk-has-now-been-added/14428/64
 
+## Machine Learning Articles
+
+- [Research DeepMind](https://deepmind.com/research)
+- [An Overview of Logic in AI and Machine Learning](https://medium.com/abacus-ai/an-overview-of-logic-in-ai-and-machine-learning-2f41ccb2a335)
+- [Deep Belief Nets](https://www.cs.toronto.edu/~hinton/nipstutorial/nipstut3.pdf)
+- [Graph Neural Networks](https://hhaji.github.io/Deep-Learning/Graph-Neural-Networks/)
+  - [An Introduction to Knowledge Graphs](https://ai.stanford.edu/blog/introduction-to-knowledge-graphs/)
+  - [Deep Learning with Knowledge Graphs](https://medium.com/octavian-ai/deep-learning-with-knowledge-graphs-3df0b469a61a)
+  - [Exciting Applications of Graph Neural Networks](https://blog.fastforwardlabs.com/2019/10/30/exciting-applications-of-graph-neural-networks.html)
+  - [Can Graph Neural Networks Solve Real World Problems?](https://hackernoon.com/can-graph-neural-networks-solve-real-world-problems-7hd636dn)
+  - [Applications of Graph Neural Networks](https://towardsdatascience.com/https-medium-com-aishwaryajadhav-applications-of-graph-neural-networks-1420576be574)
+  - [Large Scale Graph Representation Learning](https://arxiv.org/pdf/2107.09422.pdf)
+- [Numenta - Advancing Machine Intelligence with Neuroscience](https://numenta.com/)
+  - [A Framework for Intelligence and Cortical Function Based on Grid Cells in the Neocortex](https://www.frontiersin.org/articles/10.3389/fncir.2018.00121/full)
+  - [A Theory of How Columns in the Neocortex Enable Learning the Structure of the World](https://www.frontiersin.org/articles/10.3389/fncir.2017.00081/full)
+  - [Locations in the Neocortex: A Theory of Sensorimotor Object Recognition Using Cortical Grid Cells](https://www.frontiersin.org/articles/10.3389/fncir.2019.00022/full)
+  - [Technology Validation: Sparsity Enables 100x Performance Acceleration in Deep Learning Networks](https://numenta.com/neuroscience-research/research-publications/papers/Sparsity-Enables-100x-Performance-Acceleration-Deep-Learning-Networks/)
+
 ## Tools
 
 - [Cloud Native Computing Foundation](https://www.cncf.io/)

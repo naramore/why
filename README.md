@@ -295,7 +295,7 @@ it deserves explicit mention.
   - [How Discord Scaled Elixir to 5,000,000 Concurrent Users](https://blog.discord.com/scaling-elixir-f9b8e1e7c29b)
 - [Clojure](https://clojure.org/)
   - [Jepsen](http://jepsen.io/)
-  - [Pathom](https://github.com/wilkerlucio/pathom)
+  - [Pathom](https://pathom3.wsscode.com/)
   - [Datomic](https://www.datomic.com/)
     - [Unofficial Guide to Datomic Internals](https://tonsky.me/blog/unofficial-guide-to-datomic-internals/)
   - [edn](https://github.com/edn-format/edn)

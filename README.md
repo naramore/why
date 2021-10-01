@@ -227,6 +227,11 @@ it deserves explicit mention.
   - [Testing](https://medium.com/very-big-things/towards-maintainable-elixir-testing-b32ac0604b99)
 - [Earthly Blog](https://earthly.dev/blog/)
   - [Green vs Brown Programming Languages](https://earthly.dev/blog/brown-green-language/)
+- [Reversing the Technical Interview](https://aphyr.com/posts/340-reversing-the-technical-interview)
+  - [Hexing the Technical Interview](https://aphyr.com/posts/341-hexing-the-technical-interview)
+  - [Typing the Technical Interview](https://aphyr.com/posts/342-typing-the-technical-interview)
+  - [Rewriting the Technical Interview](https://aphyr.com/posts/353-rewriting-the-technical-interview)
+  - [Unifying the Technical Interview](https://aphyr.com/posts/354-unifying-the-technical-interview)
 
 ## Git, Datalog and TerminusDB
 

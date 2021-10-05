@@ -268,6 +268,7 @@ it deserves explicit mention.
   - [Locations in the Neocortex: A Theory of Sensorimotor Object Recognition Using Cortical Grid Cells](https://www.frontiersin.org/articles/10.3389/fncir.2019.00022/full)
   - [Technology Validation: Sparsity Enables 100x Performance Acceleration in Deep Learning Networks](https://numenta.com/neuroscience-research/research-publications/papers/Sparsity-Enables-100x-Performance-Acceleration-Deep-Learning-Networks/)
 - [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/pdf/1703.03400v3.pdf)
+- Complex Adaptive System of Systems
 
 ## Tools
 

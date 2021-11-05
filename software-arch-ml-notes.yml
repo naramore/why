@@ -1,0 +1,189 @@
+Important Notes:
+  - microservice/monolith are not 'architectures', they are deployment strategies, why 
+  - https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+  - https://blog.cleancoder.com/uncle-bob/2011/09/30/Screaming-Architecture.html
+  - https://blog.cleancoder.com/uncle-bob/2016/01/04/ALittleArchitecture.html
+  - https://blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html
+  - Principled vs Adaptive Code -- https://youtu.be/x9pxbnFC4aQ?t=2323
+  - Simple vs Complex -- https://youtu.be/x9pxbnFC4aQ?t=2132
+Roles:
+  - Application Development:
+    - Backend Development
+    - API Development
+    - Data Engineering
+    - Machine Learning
+  - Support DevOps:
+    - Toolchain Development
+    - Common Development
+    - Security
+    - Operations
+Software Development Lifecycle:
+  - Requirements (e.g. North Star Framework, SPINE Model, Find Your Why)
+  - Design
+  - Development
+  - Testing
+  - Deployment
+  - Operations
+Error/Fault Handling:
+  - Detect      -> telemetry, analytics, alerting
+  - Diagnose    -> telemetry, analytics, docs, dynamic tracing
+  - Remediate   -> eBPF, one-off scripts, admin controls, hot code reload, re-configure, rollback
+  - Repair      -> communication w/ dev, reproducible fault, create dev issue
+Tools:
+  - Development Styles:
+    - Trunk-based Development
+    - Feature-Branch-based Development
+    - Pair Programming
+    - Ship-Show-Ask (e.g. https://martinfowler.com/articles/ship-show-ask.html)
+  - ____-as-Code:
+    - Development-Environment-as-Code (e.g. Docker + VSCode + .devcontainers + skaffold/garden.io)
+    - CI/CD-as-Code (e.g. GitHub Actions)
+    - (Security-)Policy-as-Code (e.g. terrascann + opa)
+    - Application-Deployment-as-Code (e.g. Helm)
+    - Application-Lifecycle-as-Code (e.g. Operator Framework)
+    - Infrastructure-as-Code (e.g. Terraform)
+    - Security-Analytics-as-Code:
+      - Security-as-Code, Remediation-as-Code, Drift-as-Code
+      - Static Application Security Testing (SAST):
+        - linter(s) (e.g. super-linter, hadolint, kube-linter, kubesec, kube-score)
+        - lgtm + codeql
+        - secret/token detection (e.g. gitguardian)
+        - vulnerability scanning
+        - repo/file system/container image scanning (e.g. trivy, grype)
+      - Dynamic Application Security Testing (DAST):
+        - container benchmarking (e.g. docker-bench-security, kubernetes-security-benchmark)
+        - kubernetes/RBAC scanners (e.g. kube-hunter, kube-bench, kubeaudit, kube-scan)
+        - infrastructure scanners (e.g. driftctl)
+        - application scanners (e.g. OWASP ZAP)
+      - Dependency Tracking (e.g. dependabot, dependency track)
+      - Consumer Driven Contract Testing (e.g. pact.io)
+      - Static Code Quality Tooling (Elixir/Erlang):
+        - mix compile --warnings-as-errors
+        - mix xref (e.g. unlocked check, slow check)
+        - code formatter
+        - boundary, blocked, stream_data, benchee
+        - tests:
+          - strategy:
+            - example-based
+            - property-based
+          - scope:
+            - unit
+            - integration
+            - component
+            - (consumer driven) contract (e.g. pact.io)
+            - end-to-end
+          - metrics:
+            - coverage
+            - mutation
+            - regressions
+  - Telemetry:
+    - log consolidation (e.g. elasticsearch)
+    - metrics (e.g. prometheus)
+    - distributed tracing (e.g. jaeger)
+    - dynamic tracing (e.g. eBPF, sysdig)
+    - error tracking (e.g. sentry)
+    - analytics
+  - Documentation and Knowledge Transfer:
+    - target audience(s):
+      - contributors (i.e. other developers)
+      - operators
+      - users
+    - tools:
+      - architectural decision records
+      - Code Tour
+      - readme (+ other separate documentation)
+      - naming
+      - docstrings
+      - comments
+  - Zero Trust 'Architecture':
+    - machine authn & authz (e.g. secret storage)
+    - machine-to-machine access (e.g. service mesh)
+    - human-to-machine access (e.g. hashcorp boundary)
+    - human authn & authz (e.g. SSO)
+  - Adaptive Security 'Architecture':
+    - Policy:
+      - Predict:
+        - exposure/vulnerability assessment
+        - threat modeling
+      - Prevent:
+        - harden and isolate systems
+    - Compliance:
+      - Detect:
+        - confirm and prioritize risk
+        - contain
+      - Respond:
+        - investigate / forensics
+        - update design/model/policy
+        - remediate
+  - service catalog/registry/intelligence:
+    - integrations:
+      - repository, issues, CI/CD, telemetry, ticketing, error tracking, k8s
+    - track:
+      - service, app, library, team, domain, lang, os, image, api, contract, repo, commit, tag,
+      - release, artifact, chart, manifest, dockerfile, compose, project file, code, integration,
+      - deployment, workload, environment, vulnerability, test, issue, bug, error, request, trace,
+      - metric, log, ticket, escalation, history, user|dev|ops docs
+    - use cases:
+      - service risk assessments:
+        - transitive dependency analysis (e.g. count, distribution of internal/external, activity, sub-risk assessment)
+        - dev commits per service => knowledge concentration/distribution/diffusion
+        - average availability from metrics/k8s across all active prod deployments
+        - service bug count/graph with time
+        - what critical paths is this service in? in what proportions?
+          - (i.e. request ids + metrics + analytics of original call => e.g. 90%+ provision calls go through this service)
+      - what critical paths is this line of code in? (similar to the above)
+      - identify and predict service anamolies => correlate dependent service anamolies
+      - measure effective traffic/workload multipliers b/t dependent services
+      - periodically (daily) test external contracts against third-party APIs
+  - More Security Topics:
+    - Security Forensics
+    - Security Information and Event Management (SIEM)
+    - Security Orchestration, Automation, and Response (SOAR)
+    - Whitehat Hacking / Bug Bounties
+  - IDL Monorepo Automation (if you insist on using GRPC...)
+  - GraphQL / Pathom
+  - Repository(s):
+    - code (e.g. GitHub)
+    - container images (e.g. DockerHub)
+    - kubernetes manifests / helm charts
+    - build artifacts
+    - ML models/data/metadata/features
+  - Machine Learning Operations:
+    - Data Extraction/Validation/Preparation
+    - Model Training/Evaluation/Validation/Analysis
+    - Model Input Drift Detection
+    - Model Performance/Decay Analytics
+    - Continuous Training Pipeline
+    - Adversarial Inputs / Security?
+Interesting:
+  - Quantum Computing:
+    - https://en.wikipedia.org/wiki/Quantum_circuit
+    - https://en.wikipedia.org/wiki/Quantum_logic_gate
+    - https://en.wikipedia.org/wiki/Bloch_sphere
+    - https://en.wikipedia.org/wiki/Quantum_tomography
+    - rALU for Quantum Arithmetic - https://www.researchgate.net/publication/231039323_Reversible_arithmetic_logic_unit_for_quantum_arithmetic
+    - Quantum Data Structures - https://cs.stackexchange.com/questions/124042/data-structures-for-quantum-computers
+    - https://en.wikipedia.org/wiki/Hadamard_transform
+    - https://en.wikipedia.org/wiki/Quantum_algorithm
+      - https://arxiv.org/pdf/0812.0380.pdf
+      - https://arxiv.org/pdf/2004.06516.pdf
+  - Machine Learning:
+    - TWEANN (Topology and Weight Evolving Artificial Neural Networks)
+    - Numenta / NuPic / HTM
+      - https://arxiv.org/pdf/1903.11257.pdf
+      - https://numenta.com/neuroscience-research/research-publications/papers/
+      - https://numenta.com/neuroscience-research/research-publications/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex/
+      - https://numenta.com/resources/biological-and-machine-intelligence/spatial-pooling-algorithm/
+    - Transfer Learning
+      - https://machinelearningmastery.com/transfer-learning-for-deep-learning/
+    - (Knowledge) Graph Neural Networks
+    - Adversarial Inputs / ML Security
+    - Data Drift / Continuous Training / Online / Incremental Learning
+    - Machine Learning Operations (e.g. https://ml-ops.org/) + Data Engineering + Data Science + DevOps
+    - https://cuneiform-lang.org/
+  - Elixir/Erlang:
+    - GraphQL / Pathom (i.e. query, AST, resolvers, visualizer, batching, dynamic resolvers, subscriptions, mutations)
+    - Inference Logic Programming / Datalog
+    - Flow-based Programming (w/ Erlang Ports?)
+    - earthly
+    - CodeQL

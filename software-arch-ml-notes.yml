@@ -157,6 +157,14 @@ Tools:
     - Adversarial Inputs / Security?
 Interesting:
   - Quantum Computing:
+    - Practical Quantum Computing:
+      - https://www.youtube.com/watch?v=LFewKe_tWME&list=PL6583_bOAHxYb_aW2pXoy7wF1OjuQ9LKp&index=12
+    - https://algassert.com/quirk#circuit={%22cols%22:[[%22H%22,%22H%22,%22H%22,%22H%22,%22X%22],[1,1,1,1,%22setB%22,1,{%22id%22:%22setR%22,%22arg%22:15}],[],[%22inputA4%22,1,1,1,%22*BToAmodR4%22],[%22Chance8%22],[%22QFT%E2%80%A04%22],[%22Chance4%22]]}
+    - https://qiskit.org/textbook/ch-applications/qaoa.html
+    - https://quantum-computing.ibm.com/lab/docs/iqx/guide/grovers-algorithm
+    - https://qiskit.github.io/openqasm/language/types.html
+    - https://www.smbc-comics.com/comic/the-talk-3
+    - https://www.youtube.com/watch?v=ZUipVyVOm-Y
     - https://en.wikipedia.org/wiki/Quantum_circuit
     - https://en.wikipedia.org/wiki/Quantum_logic_gate
     - https://en.wikipedia.org/wiki/Bloch_sphere
@@ -174,8 +182,19 @@ Interesting:
       - https://numenta.com/neuroscience-research/research-publications/papers/
       - https://numenta.com/neuroscience-research/research-publications/papers/why-neurons-have-thousands-of-synapses-theory-of-sequence-memory-in-neocortex/
       - https://numenta.com/resources/biological-and-machine-intelligence/spatial-pooling-algorithm/
+      - [Navigating Numenta Papers](https://numenta.com/blog/2018/01/08/navigating-numenta-through-progression-of-papers/):
+        - https://www.frontiersin.org/articles/10.3389/fncir.2016.00023/full
+        - https://www.frontiersin.org/articles/10.3389/fncir.2017.00081/full
+      - [Neuroscience Research](https://numenta.com/neuroscience-research/):
+        - https://numenta.com/neuroscience-research/cortical-columns/
+        - https://numenta.com/neuroscience-research/sequence-learning/
+        - https://numenta.com/neuroscience-research/sparse-distributed-representations/
+        - https://numenta.com/assets/pdf/whitepapers/hierarchical-temporal-memory-cortical-learning-algorithm-0.2.1-en.pdf
     - Transfer Learning
       - https://machinelearningmastery.com/transfer-learning-for-deep-learning/
+    - Logical Induction - https://arxiv.org/pdf/1609.03543.pdf
+    - Concrete Problems in AI Safety - https://arxiv.org/pdf/1606.06565.pdf
+    - Handbook of Neuroevolution Through Erlang
     - (Knowledge) Graph Neural Networks
     - Adversarial Inputs / ML Security
     - Data Drift / Continuous Training / Online / Incremental Learning

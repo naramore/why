@@ -204,6 +204,28 @@ it deserves explicit mention.
 - [Object Oriented Programming: The Trillion Dollar Disaster](https://medium.com/better-programming/object-oriented-programming-the-trillion-dollar-disaster-92a4b666c7c7)
 - [Why Functional Programming Matters](https://hackernoon.com/why-functional-programming-matters-c647f56a7691)
 
+## Security
+
+- [Freestanding Rust Binary](https://os.phil-opp.com/freestanding-rust-binary/)
+- [Event Sourcing and Event Bus](https://relistan.com/event-sourcing-and-event-bus)
+- [Elixir Code Smells](https://github.com/lucasvegi/Elixir-Code-Smells)
+- [Kubernetes Operators](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/#writing-operator)
+- [Zip Lang](https://ziglang.org/)
+- [Elixir - Burrito](https://github.com/burrito-elixir/burrito)
+- [Security for the Modern Age](https://blog.jessfraz.com/pdf/security-for-the-modern-age.pdf)
+- [SigStore](https://www.sigstore.dev/)
+- [Unikernels: Library Operating Systems for the Cloud](http://unikernel.org/files/2013-asplos-mirage.pdf)
+- [Unikraft: Fast, Specialized Unikernels the Easy Way](https://arxiv.org/ftp/arxiv/papers/2104/2104.12721.pdf)
+- [Unikraft](https://github.com/unikraft/unikraft)
+- [OSv](https://github.com/cloudius-systems/osv)
+- [NanoVMs Erlang Patches](https://github.com/nanovms/erlang)
+- [HermitCore](https://github.com/hermitcore)
+- [The Multikernel: A new OS architecture for scalable multicore systems](https://www.microsoft.com/en-us/research/wp-content/uploads/2009/10/paper.pdf)
+- [Erlang on Xen](https://slides.com/technolo-g/intro-to-unikernels-and-erlang-on-xen-ling-demo)
+- [Erlang on OSv](https://www.erlang-factory.com/static/upload/media/1434376100469610erlang_on_osv_euc2015.pdf)
+- [BEAM on Unikraft](https://erlangforums.com/t/beam-on-unikraft/739/5)
+- [GRiSP Erlang Runtime](https://github.com/grisp/grisp)
+
 ## Blogs
 
 - [Clean Coder](https://blog.cleancoder.com/)

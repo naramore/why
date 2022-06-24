@@ -1,0 +1,157 @@
+
+https://erlef.github.io/security-wg/secure_coding_and_deployment_hardening/
+https://www.erlang.org/doc/apps/ssl/ssl_distribution.html
+https://elixirforum.com/t/beam-security-best-practices-to-secure-a-running-system/22220/18
+
+TODO: labels
+  lang -> elixir
+  elixir -> version, description, url
+  erlang -> version, description, url
+  target -> OS, version, url
+  keywords -> elixir,erlang,otp,beam,programming,language
+
+TODO: Flag ALL points where an image reaches out to the internet
+      OR (maybe) create network isolated build container? (is that overkill?)
+      OR require versions and/or hashes (+ checks) for all downloaded software? (incl Docker images)
+
+ARGS
+  ERLANG
+    VERSION
+    BUILD
+      FROM
+      FLAGS
+    LABELS
+  ELIXIR
+    VERSION
+    BUILD
+      FROM
+      FLAGS
+    LABELS
+  TARGET
+    PLATFORM (scratch|distroless|alpine|debian|ubuntu|centos|rhel|...)
+    VERSION
+  RELEASE
+    NAME
+    VERSION
+    TARGET (dir|tar|image|burrito)
+    ENV (dev|test|prod|...)
+    BUMP_VERSION (no|build|minor|major)
+    LABELS
+  TEST
+    INCLUDE
+    REVIEWDOG
+      VERSION
+      GITHUB_API_TOKEN
+      REPORTERS
+      RUNNERS
+      OPTIONS
+SCRIPTS
+  validate_versions.sh
+  app_name.exs
+  app_version.exs
+  elixir_version.exs
+  erlang_version.exs
+  gather_dlls.sh
+TARGETS
+  +build
+    +get-source
+    +bump-version
+    +base
+    +erlang
+      +erlang-alpine
+      +erlang-debian
+      +erlang-ubuntu
+      +erlang-centos
+      +erlang-rhel
+    +elixir
+      +elixir-alpine
+      +elixir-debian
+      +elixir-ubuntu
+      +elixir-centos
+      +elixir-rhel
+    +get-deps
+    +build-deps
+    +build-assets
+  +release
+  +test
+    +test-deps                mix deps.unlock --check-unused
+    +check-format             mix format --check-formatted
+    +check-compile-warnings   mix compile --warnings-as-errors --force
+    +coverage                 mix test --trace --cover --slowest=10
+    +lint-docs                mix doctor
+    +lint                     mix credo suggest -a --strict
+    +static-analysis          mix dialyzer
+      +dialyzer-core-plt
+      +dialyzer-app-plt
+    +audit-deps               mix deps.audit
+    +audit-web                mix sobelow
+    +sec-advisories           ./pest.erl ...
+      +pest-erlang
+      +pest-elixir
+    +sbom                     https://github.com/fossas/fossa-cli
+    +vuln-scan                https://github.com/aquasecurity/trivy
+    +lint-docker              hadolint
+    +lint-k8s                 kube-linter
+    +lint-misc                https://github.com/github/super-linter
+IMAGES
+  erlang:${OTP_VERSION}_${TARGET_PLATFORM}-${TARGET_VERSION}
+  elixr:${ELIXIR_VERSION}_otp-${OTP_VERSION}_${TARGET_PLATFORM}-${TARGET_VERSION}
+  ${ORG}/${APP}:${APP_VERSION}_elixir-${ELIXIR_VERSION}_otp-${OTP_VERSION}_${TARGET_PLATFORM}-${TARGET_VERSION}
+  ${ORG}/${APP}:${APP_VERSION}-${TARGET_PLATFORM}[-${TARGET_VERSION}]
+ARTIFACTS
+  +get-source/source
+  +get-deps/deps
+  +build-deps/${ENV}/deps
+  +build-assets/${ENV}/node
+  +build-assets/${ENV}/static
+  +build/${ENV}/app
+  +release/${ENV}/rel
+  +release/${ENV}/tar/${APP}-${APP_VERSION}.tar.gz
+  +release/${ENV}/burrito
+  +dialyzer-core-plt/dialyxir_erlang-${OTP_VERSION}_elixir-${ELIXIR_VERSION}_deps-${ENV}.plt*
+  +dialyzer-core-plt/dialyxir_erlang-${OTP_VERSION}.plt*
+  +dialyzer-app-plt/dialyxir_erlang-${OTP_VERSION}_elixir-${ELIXIR_VERSION}_deps-${ENV}.plt*
+  +pest-erlang/${OTP_VERSION}
+  +pest-elixir/${ELIXIR_VERSION}/${OTP_VERSION}
+COMMANDS
+  +REVIEWDOG
+
+============================================
+
+security
+  elixir/erlang/otp
+    mix deps.audit
+    mix sobelow
+    ./pest.erl
+  containers
+    best practices
+      https://fossa.com/blog/container-image-security-vulnerability-scanning/
+      https://repo1.dso.mil/dsop/dccscr/-/tree/master/
+      https://media.defense.gov/2021/Aug/03/2002820425/-1/-1/0/CTR_Kubernetes_Hardening_Guidance_1.1_20220315.PDF
+      https://www.sigstore.dev/
+    docker
+      fossas/fossa-cli
+      hadolint/hadolint
+      docker/docker-bench-security
+      Docker CIS Benchmarks
+      anchore/anchore-engine
+      quay/clair
+      aquasecurity/trivy
+      deepfence/syft + anchore/grype
+      eliasgranderubio/dagda
+      falco
+    kubernetes
+      stackrox/kube-linter
+      mesosphere/kubernetes-security-benchmark
+      Kubernetes CIS Benchmarks
+      aquasecurity/kube-hunter
+      aquasecurity/kube-bench
+      checkov
+      openclarity/kubeclarity
+      darkbitio/mkit
+      octarinesec/kube-scan
+      Shopify/kubeaudit
+      controlplaneio/kubesec
+      deepfence/ThreatMapper
+      aquasecurity/trivy / starboard
+      Open Policy Agent

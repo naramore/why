@@ -1,0 +1,118 @@
+k8s, k3s, k0s, openshift
+RBAC + SSO + SELinux
+CIS Kubernetes / Docker
+Hardened Master, Node, and ETCD
+Authority:                          Certificate Authority, OAuth, OpenID
+AAA Stack:                          Vault, Istio/Consul, Boundary, Keycloak
+SigStore Stack:                     Cosign, Rekor, Fulcio
+LMA Stack:                          Prometheus, AlertManager, Grafana, Loki, Fluentd
+Distributed Tracing:                Jaeger/OpenTelemetry
+Error Tracking:                     Sentry/Bugsnap/Rollbar/Airbrake
+Infrastructure-as Code:             terraform + helm (k8s + ^)
+Policy-as-Code:                     OPA Gateway / terraform
+Hardened Containers / Charts:       ^ + DBs + Brokers (e.g. RabbitMQ) 
+CI/CD:                              Concourse, Spinnaker + Kayenta (i.e. automated canary analysis)
+Automated Backups:                  Cluster & Persistent Storage (i.e. how???)
+Observability:                      kubernetes-dashboard / Lens / Octant
+Moving Target Defense:              Polyverse Polymorphic Linux + Polyscripting + K8S Images
+DAST:                               Starboard w/ Kube-Hunter & CIS Benchmarks + OWASP ZAP
+Sidecar Container Security Stack:   Auto-Injected
+                                    Istio (zero trust) w/ certs + mTLS + whitelists
+                                    Continuous Scanning, Alerting, CVE Detection
+                                    Behavior Detection via Twistlock/Sysdig/Stackrox
+                                    Detect Unapproved Dockerfile Changes w/ Anchore
+                                    OpenSCAP
+                                    VAT
+Development:                        pair programming + ship-show-ask + libraries > apps
+Dev-Env-as-Code:                    VSCode + Docker + devcontainer
+Conventions:                        Conventional Commits + Keep a Changelog + SemVer
+Tools:                              commitizen + pre-commit + code tour
+Support Libraries:                  App Skeleton, Telemetry
+
+===============================================
+===============================================
+
+Logger
+:telemetry
+:opentelemetry
+:sys.install/2, :sys.get_status/1, :sys.get_state/1, :sys.replace_state/2
+:msacc.start/1, :msacc.print/0
+:recon_trace
+perf top -p 'pgrep beam'
+dtrace/systemtap/ebpf (dyntrace)
+
+===============================================
+===============================================
+
+Automation    -> Integration (Test, Validate, Build), Automated Canary Analysis, Deployment
+Identity      -> Authority, Authentication, Authorization, Signing, Secret Management, Mesh
+Telemetry     -> Logs, Metrics, Distributed Traces, Dynamic Traces, Error Tracking
+Security      -> Container/Chart Hardening, DAST, Automated Pen Tests, Moving Target Defense, Sidecar Container Security Stack
+GitOps        -> Dev-Env-as-Code, CI/CD-as-Code, Infrastructure-as-Code, Policy-as-Code
+Development   -> Pair Programming, Ship-Show-Ask, Conventional Commits, Keep a Changelog, SemVer, Code Tour
+Operations    -> Detect -> Confirm -> Analyze (Collect Evidences -> Develop Theory -> Explain Evidences -> Prototype Change) -> Mitigate (Plan -> Prepare -> Deploy) -> Verify -> Document
+                 (^ tools + training + authority)
+
+===============================================
+===============================================
+
+GOAL -> Secure, Fast, Kubernetes w/ Service-Based Application Architecture
+Why Kubernetes? -> Avoid Vendor Lock-in (we ARE the vendor, so...)
+                -> Containers Enable Fast Development / Deployment
+                -> Cloud Native Computing Foundation (CNCF)
+
+Step #1 -> Secure Container Images
+  ASSUME -> We CAN'T Trust 'Most' Public Base Images
+  THEREFORE -> We MUST Build and Maintain our own set of 'Hardened' Containers
+    NEEDS -> Image Repository
+          -> AUTOMATED Container Build / Verification Pipeline
+          -> AUTOMATION for Routinely Checking Existing Images Deps (version bumps + CVEs)
+          -> RESTRICT Base Images and Internet Access during Build
+          -> Security 'Scoring' / Details for ALL Hardened Images
+          -> Image Signing
+
+Step #2 -> Secure Helm Charts (similar to the above, but w/ charts)
+
+Step #3 -> Automate Kubernetes
+  NEEDS -> GitOps / Infrastructure-as-Code
+
+Step #4 -> Secure Kubernetes
+  NEEDS -> TELEMETRY!!! (e.g. Logs, Metrics, Distributed Traces, Dynamic Traces, Error Tracking)
+        -> Secret Management
+        -> Authn/Authz
+        -> Dynamic Application Security Testing
+        -> Automated Penetration Testing
+        -> Moving Target Defense
+        -> Sidecar Container Security Stack (via Service Mesh)
+        -> Policy-as-Code
+
+Step #5 -> Enable Operability
+  ASSUME -> Stuff WILL Break, We WILL Make Mistakes
+  THEREFORE -> Operations needs the tools, training, and authority to find and fix faults
+    NEEDS -> Detection (telemetry + analytics)
+          -> Confirmation (deterministic / repeatability)
+          -> Analysis/Diagnostics
+            -> Collect Evidences (telemetry + analytics + admin ops)
+            -> Develop Theory (docs + models)
+            -> Explain Evidences
+            -> Prototype Change (development)
+          -> Mitigate
+            -> Plan (notify)
+            -> Prepare (remediate + test)
+            -> Deploy (CI/CD + blue-green/canary/slow-roll)
+          -> Verify (telemetry + analytics + admin ops)
+          -> Document (contract, test-cases, docs)
+
+Step #6 -> Streamline Development
+  ASSUME -> We want to FOCUS on Delivering Business Value
+  THEREFORE -> Everything else Devs Require Should be in Place and ACTIVELY MAINTAINED
+    NEEDS -> Automated CI/CD + CI/CD-as-Code
+          -> Consumer/Producer Contract Testing Support
+          -> Dev-Env-as-Code
+          -> Best Practices
+          -> Service Skeletons
+          -> Pair Programming + Ship-Show-Ask
+          -> Conventional Commits, Keep a Changelog, SemVer
+          -> Documentation: Design, User, Dev, Ops (e.g. LADR, Code Tour)
+    HELPFUL -> Delegation Tables (dtabs)
+            -> Queues (e.g. RabbitMQ)

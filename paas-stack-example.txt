@@ -1,0 +1,144 @@
+Goals
+  Maximize the Encoding of Knowledge in Code (i.e. *-as-Code)
+  Maintainability
+    Operability
+    Simplicity
+    Evolvability
+  Resiliency
+  Security
+  Scalability
+Development
+  Style -> Ship-Show-Ask & Hexagonal / Clean Architecture
+  Dev-Env-as-Code -> VSCode + devcontainers + Docker + Live Share (or Codespaces/Gitpod)
+  CI-as-Code -> GitHub Actions + Earthly + Reviewdog
+                mix deps.unlock --check-unused
+                mix format --check-formatted
+                mix compile --warnings-as-errors --force
+                mix test --trace --cover --slowest=10
+                mix doctor
+                mix credo suggest -a --strict
+                mix dialyzer
+                github/super-linter
+                hadolint/hadolint
+  Automated Build / Release of Artifacts
+  Libraries -> boundary, blocked
+  Other Tools -> Conventional Commits + Keep a Changelog + SemVer
+                 commitizen + pre-commit + code tour
+Testing
+  ExUnit
+  stream_data/proper/triq/eqc_ex
+  Mutation Testing?
+Deployment
+  CD-as-Code -> GitHub Actions + Earthly + terraform + flyctl
+  Image -> Base scratch / distroless
+Operations
+  Detect -> Logger + flyctl logs
+            :telemetry + Prometheus
+            opentelemetry + Jaegar
+            Sentry
+  Confirm -> Remote IEx
+  Analyze
+  Mitigate -> see Deployment
+  Verify -> see Detect
+  Document -> ExUnit / ExDoc
+Security
+  Secret Management -> flyctl secrets
+  Authority / Signatures -> sigstore
+  Automation
+    Continuous Integration -> GitHub Actions + Earthly + Reviewdog
+      mix deps.audit
+      mix sobelow
+      ./pest.erl ...
+      fossas/fossa-cli
+      aquasecurity/trivy
+      anchore/anchore-engine
+      quay/clair
+      aquasecurity/trivy
+      deepfence/syft + anchore/grype
+      eliasgranderubio/dagda
+    Continous Deployment -> GitHub Actions + Earthly
+      docker/docker-bench-security
+      Docker CIS Benchmarks
+      deepfence/ThreatMapper
+      Open Policy Agent (i.e. Policy-as-Code)
+    Hardening
+      Custom, Controlled Base Images (see https://repo1.dso.mil/dsop/dccscr)
+  Moving Target Defense?
+  Deception?
+Documentation
+  Audiences
+    Developers
+    Users
+    Operators
+  Tools
+    ExDoc
+    ExUnit
+    Code Tour
+    (L)ADRs
+
+Ideas
+  Ship-Show-Ask
+  Hexagonal / Clean Architecture
+  Conventional Commits
+  Keep a Changelog
+  SemVer
+Tools
+  flyctl
+  vscode
+    devcontainer
+    live share
+    code tour
+  docker
+  earthly
+  github actions
+  reviewdog
+  elixir + erlang otp
+  super-linter
+  hadolint
+  commitizen
+  pre-commit
+  terraform
+  scratch / distroless
+  prometheus
+  jaegar
+  sentry
+  sigstore
+  fossa-cli
+  trivy
+  anchore
+  clair
+  syft
+  grype
+  dagda
+  docker-bench-security
+  ThreatMapper
+  OPA
+  LADRs
+  dtrace/systemtap/ebpf (dyntrace)
+Libraries
+  excoveralls
+  doctor
+  credo
+  dialyxir
+  boundary
+  blocked
+  stream_data/proper/triq/eqc_ex/pulse
+  telemetry
+  opentelemetry
+  ex_doc
+  deps_audit
+  sobelow
+  pest
+  recon
+Investigate
+  Anamoly Detection / Forcast
+  Active Signature / Behavior Detection
+  DoD Ironbank -> https://repo1.dso.mil/dsop/dccscr
+  Mutation Testing
+  Moving Target Defense
+    Shuffling
+      Instances
+      Operating Systems
+      Non-Deterministic OS Memory Initialization
+      Language Polyscripting
+  Cyber Security Deception

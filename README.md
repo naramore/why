@@ -185,6 +185,11 @@ it deserves explicit mention.
 - [Test Quality in CI/CD](https://www.sealights.io/blog/test-quality-in-ci-cd-expert-roundup/)
 - [Step Away from the Computer or Hammock-driven Development](https://github.com/matthiasn/talk-transcripts/blob/master/Hickey_Rich/HammockDrivenDev.md)
 - [Mutation Testing](https://en.wikipedia.org/wiki/Mutation_testing)
+- [How Complex Systems Fail](https://how.complexsystems.fail/)
+- [Choose Boring Technology](https://boringtechnology.club/)
+- [Principles of Chaos Engineering](https://principlesofchaos.org/)
+- [CutEr: Concolic Unit Testing in Erlang](https://github.com/cuter-testing/cuter)
+- [snabbkaffe: trace-based testing](https://hex.pm/packages/snabbkaffe)
 
 ## Architecture
 
@@ -195,6 +200,9 @@ it deserves explicit mention.
 - [How to Build Observable Distributed Systems](https://qconlondon.com/system/files/presentation-slides/qcon_london_-_building_observable_distributed_systems.pdf)
 - [Branching Patterns](https://martinfowler.com/articles/branching-patterns.html)
 - [What Color is Your Function?](http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/)
+- [Observability Maturity Model](https://dzone.com/refcardz/observability-maturity-model#section-4)
+- [Adopting Erlang: How to Do Polyglot Right](https://adoptingerlang.org/docs/team_building/how_to_polyglot/)
+- [Technology Radar: Techniques](https://www.thoughtworks.com/radar/techniques)
 
 ## Object Orientation
 

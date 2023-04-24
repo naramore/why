@@ -234,6 +234,34 @@ it deserves explicit mention.
 - [BEAM on Unikraft](https://erlangforums.com/t/beam-on-unikraft/739/5)
 - [GRiSP Erlang Runtime](https://github.com/grisp/grisp)
 
+## DevSecOps Platform
+
+- DevOps Research and Assessment (DORA) - https://dora.dev/
+- Supply-Chain Levels for Software Artifacts - https://slsa.dev/
+- Sigstore - https://www.sigstore.dev/
+- Cycode - https://cycode.com/
+- Prisma - https://www.paloaltonetworks.com/prisma/cloud/software-supply-chain-security
+- Bridgecrew - https://bridgecrew.io/software-supply-chain-security/
+- Kusari - https://www.kusari.dev/products/securesupplychain/
+- Factory for Repeatable Secure Creation of Artifacts - https://buildsec.github.io/frsca/
+- Graph for Understanding Artifact Composition - https://github.com/guacsec/guac
+- Service Catalog - https://backstage.io/
+- osquery + kubequery + cloudquery - https://www.osquery.io/
+- DoD DevSecOps - https://public.cyber.mil/devsecops/
+- DoD Container Hardening Process Guide - https://dl.dod.cyber.mil/wp-content/uploads/devsecops/pdf/Final_DevSecOps_Enterprise_Container_Hardening_Guide_1.2.pdf
+- DoD Enterprise DevSecOps Reference Design - https://dodcio.defense.gov/Portals/0/Documents/DoD%20Enterprise%20DevSecOps%20Reference%20Design%20v1.0_Public%20Release.pdf?ver=2019-09-26-115824-583
+- DoD Enterprise DevSecOps Fundamentals - https://dl.dod.cyber.mil/wp-content/uploads/devsecops/pdf/DoDEnterpriseDevSecOpsFundamentals.pdf
+- OWASP Kubernetes Top 10 - https://owasp.org/www-project-kubernetes-top-ten/
+- OWASP Software Assurance Maturity Model - https://owaspsamm.org/model/
+- OWASP Application Security Verification Standard - https://owasp.org/www-project-application-security-verification-standard/
+- SAFECode Fundamental Practices for Secure Software Development - https://safecode.org/wp-content/uploads/2018/03/SAFECode_Fundamental_Practices_for_Secure_Software_Development_March_2018.pdf
+- Observability Maturity Model - https://dzone.com/refcardz/observability-maturity-model
+- NIST Zero Trust Architecture - https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf
+- Cloud Security Technical Reference Architecture - https://www.cisa.gov/sites/default/files/publications/CISA%2520Cloud%2520Security%2520Technical%2520Reference%2520Architecture_Version%25201.pdf
+- Zero Trust Maturity Model - https://www.cisa.gov/sites/default/files/2023-04/CISA_Zero_Trust_Maturity_Model_Version_2_508c.pdf
+- Relationships Between Cyber Resiliency Constructs and Cyber Survivability Attributes - https://www.mitre.org/sites/default/files/2022-09/pr-19-02172-10-cyber-resiliency-constructs-cyber-survivability.pdf
+- Moving Target Defense - https://www.morphisec.com/moving-target-defense
+
 ## Blogs
 
 - [Clean Coder](https://blog.cleancoder.com/)

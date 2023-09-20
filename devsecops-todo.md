@@ -1,0 +1,47 @@
+# todo
+
+- [ ] Software Factory
+    - [ ] App Release Automation
+        - requirements / guidelines:
+            - Local & Remote Pairity (i.e. platform independent)
+            - SLSA Level 3 (hardened, provenance, signed, trusted)
+            - Reproducible / Bootstrapable Builds (hermetic, ideally bit-for-bit reproducible)
+            - DoD DevSecOps Reference Design / Ironbank
+            - OpenSSF Scorecards + Dependabot
+            - something like: wolfi + wolfictl + melange + apko + earthly (but that actually works together from source...)
+        - checks: formatter, linters, static analyzers
+        - version checker: app, deps, langs, os, pkgs, tools
+        - add automation-related artifacts:
+            - release artifacts: image, archive, sbom, provenance
+            - version bump
+            - test artifacts (e.g. previous performance results)
+        - audits: deps, licenses, secrets, sast, dast, rasp, vuln-scans, attestations, sbom, provenance, verify-attestations
+        - policy enforcement: oscap?
+        - tests: property-based, trace-based, coverage, benchmarks, mutation, contracts, automated-canary-analysis
+        - service registry/catalog
+    - [ ] Platform Release Automation (i.e. Erlang & Elixir)
+    - [ ] OS Release Automation
+- [ ] Generic Service Component Operator
+    - Operator Framework: Level 5
+    - Observability Maturity Model Level 3+
+- [ ] Automated Moving Target Defense
+    - Polymorphic OS & Platform Build Pipelines
+    - Kubernetes Custom Resource Definitions / Operators
+        - Continuous Rotation Deployments
+        - Deployments of Heterogenous Images
+        - Image Streams
+- [ ] Generic Service Platform
+    - requirements / guidelines:
+        - DoD DevSecOps Reference Design
+        - Batteries-Included w/:
+            - Software Factory
+            - Continuous Deployment
+            - Service Mesh
+            - LMA Stack + OpenCensus + Error Tracking
+            - AAA Stack
+            - Trust & Authority
+            - Service Catalog + Observability / Dashboards
+            - Security:
+                - Zero-Trust Architecture
+                - Secret Management
+                - Sidecar Container Security Stack

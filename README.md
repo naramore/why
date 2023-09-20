@@ -328,6 +328,34 @@ it deserves explicit mention.
 - [Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks](https://arxiv.org/pdf/1703.03400v3.pdf)
 - Complex Adaptive System of Systems
 
+## What I've been Reading Lately...
+
+- [EEF Security WG](https://erlef.github.io/security-wg/)
+- [Secure Coding and Deployment Hardening Guidelines](https://erlef.github.io/security-wg/secure_coding_and_deployment_hardening/)
+- [Web Application Security Best Practices for BEAM languages](https://erlef.github.io/security-wg/web_app_security_best_practices_beam/)
+- [Exploit Guard - Open Source Runtime Application Self Protection (RASP) for Elixir](https://elixirforum.com/t/exploit-guard-open-source-runtime-application-self-protection-rasp-for-elixir/56448)
+- [How to Specify It!: A Guide to Writing Properties of Pure Functions](https://research.chalmers.se/publication/517894/file/517894_Fulltext.pdf)
+- [On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)
+- [Numenta: Biological and Machine Intelligence](https://www.numenta.com/assets/pdf/biological-and-machine-intelligence/BaMI-Complete.pdf)
+- [A Framework for Intelligence and Cortical Function Based on Grid Cells in the Neocortex](https://www.frontiersin.org/articles/10.3389/fncir.2018.00121/full)
+- [HTM Implementations](https://discourse.numenta.org/tag/htm-implementations)
+    - [ElixirHTM](https://github.com/gaolaowai/ElixirHTM)
+    - [cort.ex](https://github.com/fergalbyrne/cort.ex)
+    - [etaler](https://github.com/etaler/Etaler)
+    - [tiny-htm](https://github.com/marty1885/tiny-htm)
+    - [Where is the sensorimotor code?](https://discourse.numenta.org/t/where-is-the-sensorimotor-code/2210/27)
+    - [Free will volition module](https://discourse.numenta.org/t/free-will-volition-module/2357)
+- [Grok: The Problem with Novel Applied AI & ML](https://grokstream.com/what-is-aiops/)
+- [Reproducible Builds](https://reproducible-builds.org/)
+- [Bootstrappable Builds: Best Practices](https://bootstrappable.org/best-practices.html)
+- [Chainguard GitHub](https://github.com/chainguard-dev)
+    - [Chainguard Images GitHub](https://github.com/chainguard-images/images)
+    - [Idea: pinning specific versions of apk packages (with repro-get, oras, etc.)](https://github.com/chainguard-dev/apko/issues/396)
+    - [Reproducing Chainguard’s reproducible image builds](https://www.chainguard.dev/unchained/reproducing-chainguards-reproducible-image-builds)
+    - [Wolfi](https://github.com/wolfi-dev/os)
+- [repro-get](https://github.com/reproducible-containers/repro-get)
+- [neuvector](https://github.com/neuvector/neuvector)
+
 ## Tools
 
 - [Cloud Native Computing Foundation](https://www.cncf.io/)
